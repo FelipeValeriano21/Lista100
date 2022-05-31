@@ -5,30 +5,33 @@ import javax.swing.JOptionPane;
 
 public class exe48 {
     
-        public static void main (String ars[]){
+    public static void main (String ars[]){
  
-int i,n,cont = 0;
+        int n;
 
-n = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero"));  
+        n = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um numero"));  
+                    
+        
+        if (verificadorPrimo(n)){
+
+            JOptionPane.showMessageDialog(null,"O numero é primo");
+
+        }else{
+
+            JOptionPane.showMessageDialog(null,"O numero não é primo");
+
+        }          
             
-for(i = 1; i<=n;i++){
-
-    if (n%i==0){
     
-    cont++;
     }
 
-} if (cont==2){
-
-JOptionPane.showMessageDialog(null,"O numero é primo");
-
-}else{
-
-JOptionPane.showMessageDialog(null,"O numero não é primo");
-
-}          
-            
-    
-}
+    static boolean verificadorPrimo(int num){
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0){
+                return false; 
+            }  
+        }
+        return true;
+    }
         
 }
