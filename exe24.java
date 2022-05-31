@@ -5,35 +5,26 @@ import javax.swing.JOptionPane;
 
 public class exe24 {
     
- public static void main (String ars[]){    
- 
-            double maior,n1,n2,n3;
-            int op;
-n1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o numero1: "));
+    public static void main (String ars[]){    
 
-n2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o numero2: "));   
+        double maior,n1,n2,n3;
+        
+        n1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o numero 1: "));
 
-n3 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o numero3: "));
+        n2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o numero 2: "));   
+
+        n3 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o numero 3: "));
 
 
-maior = n1; 
+        if (n1 > n2 && n1 > n3){
+            maior = n1;
+        } else if (n2 > n3){
+            maior = n2;
+        } else {
+            maior = n3;
+        }
 
-if (n2>n1){
+        JOptionPane.showMessageDialog(null,"O maior número é: " + maior);
 
-    maior=n2; 
-    
-if (n3>n2){
-    
-      maior=n3; 
-    
-}
-}else if (n3>n1){
-
- maior=n3; 
-
-}
-
-JOptionPane.showMessageDialog(null,"O maior é o " + maior);
-
- }
+    }
 }
