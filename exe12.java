@@ -9,13 +9,10 @@ public class exe12 {
         
         double v;
 
-v = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual a velocidade em m/s "));    
-    
- 
-v = v*3.6;
+        v = Double.parseDouble(JOptionPane.showInputDialog(null, "Qual a velocidade em m/s "));    
+        v = v * 3.6;
 
-
-JOptionPane.showMessageDialog(null,"A velocidade em km/h é " + v);
+        JOptionPane.showMessageDialog(null,"A velocidade em km/h é " + v);
     }
     
     

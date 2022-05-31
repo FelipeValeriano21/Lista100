@@ -8,38 +8,33 @@ import javax.swing.JOptionPane;
 public class exe30 {
     
 
-     public static void main(String args[]){      
+  public static void main(String args[]){      
          
-   String op; 
-   double l,p; 
-   
-   l = Double.parseDouble(JOptionPane.showInputDialog(null, "Quantidade de litros"));
-  op =  JOptionPane.showInputDialog(null, "Combustivel: A - ALCOOL | G - GASOLINA ");     
-  
-  
-  if(op.equals("A")){
-      
-  p = 1.9*l;  
-  
-    JOptionPane.showMessageDialog(null,"O total a pagar por " + l + " litros de alcool é R$" + p);
-  
+    String op; 
+    double l,p; 
 
-  
-  }else if(op.equals("G")){
+    l = Double.parseDouble(JOptionPane.showInputDialog(null, "Quantidade de litros"));
+    op =  JOptionPane.showInputDialog(null, "Combustivel: A - ALCOOL | G - GASOLINA ");     
+
+
+    if(op.equals("A")){
       
-   p = 2.7*l;     
-   
-       JOptionPane.showMessageDialog(null,"O total a pagar por " + l + " litros de gasolina é R$" + p);
-  
-  
-  }else{
-  
-  JOptionPane.showMessageDialog(null,"Opção inexistente, programa acabado");
-  
+      p = 1.9*l;  
+
+      JOptionPane.showMessageDialog(null,"O total a pagar por " + l + " litros de alcool é R$" + p);
+
+    }else if(op.equals("G")){
+      
+      p = 2.7*l;     
+
+      JOptionPane.showMessageDialog(null,"O total a pagar por " + l + " litros de gasolina é R$" + p);
+
+
+    }else{
+
+      JOptionPane.showMessageDialog(null,"Opção inexistente, programa acabado");
+
+    }
+
   }
- 
-   
-    
-    
-}
 }
