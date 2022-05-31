@@ -12,16 +12,16 @@ public class exe15 {
         
         double sh,ss,sp,hp;
     
-sh = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite sua altura em M "));
+        sh = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite sua altura em M "));
 
-ss = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a altura da sua sombra em M "));   
+        ss = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a altura da sua sombra em M "));   
 
-sp = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a altura da sombra do prédio em M "));
+        sp = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite a altura da sombra do prédio em M "));
 
-    
- hp = sp*sh/ss;
- 
- JOptionPane.showMessageDialog(null,"A altura do prédio é " + hp);
-}
+            
+        hp = sp*sh/ss;
+        
+        JOptionPane.showMessageDialog(null,"A altura do prédio é " + hp);
+    }   
     
 }

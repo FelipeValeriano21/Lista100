@@ -2,20 +2,13 @@
 package lista100;
 
 public class exe42 {
-    
   public static void main(String args[]){    
- int i = 100;
       
-   while (i>=1){
-   
-   System.out.println(i);    
-       
-   i--; 
-       
-   
-   }   
+    for (int i = 100; i > 0; i--) {
+      System.out.println(i);
+
+    }
       
-    
-}
+  }
 
 }
