@@ -8,17 +8,18 @@ public class exe6 {
     
     public static void main (String ars[]){
      
-        double  n1,n2,r;
+        int  n1, n2, quociente, resto;
 
-n1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o numero 1: "));
+        n1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o numero 1: "));
 
-n2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Digite o numero 2: "));
-    
- 
-r = n1/n2;
+        n2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o numero 2: "));
+            
+        
+        quociente = n1 / n2;
+        resto = n1 % n2;
 
 
-JOptionPane.showMessageDialog(null,n1 + " / " + n2 + " = " + r);
+        JOptionPane.showMessageDialog(null,"O resultado da divisão é: " + quociente + "\nO resto da divisão é: " + resto);
     }
     
 }
