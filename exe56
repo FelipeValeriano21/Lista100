@@ -1,0 +1,29 @@
+package lista100;
+
+import javax.swing.JOptionPane;
+
+public class exe56 {
+    
+    public static void main (String args[]){
+ int n, i;    
+ n = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite o numero"));
+ 
+ for(i=1;i<=n;i++){
+ 
+ if (n%i==0){
+ 
+ if(i!=n){
+ 
+ System.out.println( i + "+");
+     
+ }
+     
+ 
+ }
+ 
+ }
+ 
+    
+    }
+    
+}
